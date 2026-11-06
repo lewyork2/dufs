@@ -1,3 +1,3 @@
-FROM sigoden/dufs:alpine
-EXPOSE 5000
-CMD ["/data", "--bind", "0.0.0.0:5000", "-A"]
+FROM czheo/chfs:latest
+EXPOSE 8080
+CMD ["--path=/data", "--port=8080"]
